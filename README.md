@@ -16,6 +16,16 @@ A tiny, portable, immediate-mode UI library written in ANSI C
 * See [`doc/usage.md`](doc/usage.md) for usage instructions
 * See the [`demo`](demo) directory for a usage example
 
+### Build on Windows
+To build on windows with Visual Studio, the easiest way is to utilize `cmake` and `vcpkg`.
+Install both and then:
+```
+vcpkg install sdl2:x64-windows
+mkdir build
+cd build
+cmake .. -G "Visual Studio 15 2017 Win64"
+```
+
 ## Notes
 * The library expects the user to provide input and handle the resultant
   drawing commands, it does not do any drawing itself
