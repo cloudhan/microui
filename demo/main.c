@@ -1,3 +1,6 @@
+#ifdef _WIN32
+#define SDL_MAIN_HANDLED
+#endif
 #include <SDL2/SDL.h>
 #include <stdio.h>
 #include "renderer.h"
